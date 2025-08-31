@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Enquiries</title>
+</head>
+<body>
+  <h2>User Enquiries</h2>
+  <% if (enquiries.length === 0) { %>
+    <p>No enquiries yet.</p>
+  <% } else { %>
+    <ul>
+      <% enquiries.forEach(enq => { %>
+        <li><%= enq %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
